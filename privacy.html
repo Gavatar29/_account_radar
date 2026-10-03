@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası · Account Radar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="index.html">Account Radar</a>
+  <nav><a href="index.html">Ana sayfa</a><a href="privacy.html">Gizlilik</a><a href="terms.html">Kullanım Şartları</a><a href="#en">English</a></nav>
+</header>
+
+<h1>Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+<p class="muted">Yürürlük tarihi: 3 Ekim 2026</p>
+
+<div class="box">
+  <strong>Kısaca:</strong> Account Radar, e-postalarını ve harcama bildirimlerini <strong>telefonunda</strong> işler. Mail içeriklerin, fiş fotoğrafların ve e-posta adreslerin sunucularımıza gönderilmez. Verilerini satmayız, reklam için kullanmayız. Radar Asistanı'nı kullanırsan ve onay verirsen yalnızca harcamalarının bir <strong>özeti</strong> yapay zekâ sağlayıcısına gider.
+</div>
+
+<h2>1. Veri sorumlusu</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu: <strong>Tolga Samahor</strong>, İstanbul, Türkiye. İletişim: <a href="mailto:samahorrtolga@gmail.com">samahorrtolga@gmail.com</a></p>
+
+<h2>2. Hangi verileri, nerede işliyoruz?</h2>
+<table>
+  <thead><tr><th>Veri</th><th>Ne için</th><th>Nerede</th></tr></thead>
+  <tbody>
+    <tr><td>Google hesabın: ad, e-posta adresi, profil fotoğrafı</td><td>Giriş yapmak, hangi Gmail hesabından tarama yapıldığını göstermek</td><td>Cihazında; bulut hesabı açarsan hesap kimliğin sunucuda (Supabase)</td></tr>
+    <tr><td>Gmail iletileri (salt okuma, <code>gmail.readonly</code>)</td><td>Abonelikleri, faturaları, App Store / Google Play makbuzlarını, deneme sürelerini, iptal bildirimlerini ve bankaların harcama bildirimlerini bulmak; "Mail'de göster" ile iletiyi uygulama içinde göstermek</td><td><strong>Yalnızca cihazında.</strong> İletiler sunucumuza gönderilmez; çıkarılan sonuçlar (abonelik adı, tutar, tarih) cihazında saklanır</td></tr>
+    <tr><td>E-posta gönderme izni (<code>gmail.send</code>, yalnızca istersen)</td><td>Senin isteğinle bir servise üyelik iptal e-postası göndermek; PIN'ini unuttuğunda kendine kurtarma kodu göndermek</td><td>E-posta senin Gmail hesabından, yalnızca sen "Gönder" dediğinde gider</td></tr>
+    <tr><td>Google Drive gizli uygulama klasörü (<code>drive.appdata</code>, yalnızca istersen)</td><td>Şifreli yedeğini senin Drive'ına koymak</td><td>Senin Google Drive hesabında; yedek senin belirlediğin şifreyle şifrelenir, biz açamayız</td></tr>
+    <tr><td>Elle girdiğin veriler: abonelik fiyatları, harcamalar, bütçe, gelir, kategori limitleri, ortak abonelik bilgileri, portföy</td><td>Uygulamanın temel işlevleri</td><td>Cihazında</td></tr>
+    <tr><td>Fiş fotoğrafları</td><td>Fişteki tutar ve kalemleri okumak (cihaz üstü metin tanıma)</td><td>Yalnızca cihazında; fotoğraf hiçbir yere gönderilmez</td></tr>
+    <tr><td>Uygulama kullanım süreleri (yalnızca Android, izin verirsen)</td><td>Uzun süredir kullanmadığın abonelikleri göstermek</td><td>Yalnızca cihazında</td></tr>
+    <tr><td>Uygulama kilidi PIN'i, biyometri</td><td>Uygulamayı kilitlemek</td><td>PIN yalnızca karma (hash) olarak cihazda; biyometrik doğrulamayı işletim sistemi yapar, verisine erişmeyiz</td></tr>
+    <tr><td>Bulut hesabı ve plan bilgisi</td><td>Premium planını ve asistan soru hakkını takip etmek</td><td>Sunucuda (Supabase, AB – Frankfurt): hesap kimliği, plan, günlük soru ve token sayıları</td></tr>
+    <tr><td>Satın alma bilgisi</td><td>Premium aboneliği yönetmek</td><td>Ödemeyi Apple / Google alır; abonelik durumu RevenueCat aracılığıyla takip edilir. Kart bilgini görmeyiz</td></tr>
+    <tr><td>Radar Asistanı'na gönderilen özet (yalnızca asistanı kullanırsan ve onay verirsen)</td><td>Sorunu yanıtlamak</td><td>Sunucumuz üzerinden Google Gemini'ye iletilir; sohbet saklanmaz (bkz. Madde 4)</td></tr>
+  </tbody>
+</table>
+
+<h2>3. Google kullanıcı verileri (Google API Services User Data Policy)</h2>
+<p>Account Radar'ın Google API'lerinden aldığı bilgileri kullanması ve başka bir uygulamaya aktarması, Sınırlı Kullanım (Limited Use) gereklilikleri dahil olmak üzere <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Hizmetleri Kullanıcı Verileri Politikası</a>'na uygundur.</p>
+<ul>
+  <li>Gmail ve Drive verilerini yalnızca uygulamada sana gösterilen özellikler için kullanırız.</li>
+  <li>Bu verileri satmayız, reklam, kredi değerlendirmesi ya da veri komisyonculuğu için kullanmayız veya aktarmayız.</li>
+  <li>Gmail verilerini veya bunlardan türetilen bilgileri genel amaçlı yapay zekâ ya da makine öğrenmesi modellerini eğitmek için kullanmayız ve kullandırmayız.</li>
+  <li>Hiçbir insan e-postalarını okumaz. Tek istisna senin açık iznin, güvenlik amaçlı inceleme ya da yasal zorunluluktur.</li>
+</ul>
+
+<h2>4. Radar Asistanı (yapay zekâ)</h2>
+<p>Asistanı ilk kullanışında sana ne gönderileceği gösterilir ve onayın istenir. Onay verirsen, her soruda şu özet sunucumuz üzerinden Google Gemini'ye gönderilir: aboneliklerin ve fiyatları, son 6 ayın harcama toplamları, bu ayın satıcı ve hesap kırılımı, önümüzdeki 30 günün planlı ödemeleri ve aylık gelirin. <strong>E-posta adreslerin, mail içeriklerin ve fiş fotoğrafların gönderilmez.</strong> Sohbet içeriğini sunucumuzda saklamayız; yalnızca soru hakkını takip etmek için günlük soru ve token sayısını tutarız. Gemini bu veriyi Google'ın ücretli API koşullarına göre işler.</p>
+
+<h2>5. Üçüncü taraf hizmetler</h2>
+<table>
+  <thead><tr><th>Hizmet</th><th>Ne için</th><th>Giden bilgi</th></tr></thead>
+  <tbody>
+    <tr><td>Google (Giriş, Gmail API, Drive API)</td><td>Giriş, tarama, yedek</td><td>Google hesabının yetkilendirmesi</td></tr>
+    <tr><td>Supabase (AB – Frankfurt)</td><td>Bulut hesabı, plan, asistan aracısı</td><td>Hesap kimliği, plan, kullanım sayıları, asistan özeti (iletilir, saklanmaz)</td></tr>
+    <tr><td>Google Gemini API</td><td>Radar Asistanı yanıtları</td><td>Madde 4'teki özet ve sorun</td></tr>
+    <tr><td>Apple App Store / Google Play, RevenueCat</td><td>Abonelik satın alma ve durumu</td><td>Satın alma kayıtları, anonim kullanıcı kimliği</td></tr>
+    <tr><td>Google favicon hizmeti</td><td>Abonelik logolarını göstermek</td><td>Servisin alan adı (ör. netflix.com)</td></tr>
+    <tr><td>Yahoo Finance</td><td>Borsa fiyatları</td><td>İzlediğin hisse sembolleri</td></tr>
+    <tr><td>Frankfurter (kur verisi)</td><td>Döviz kurları</td><td>Kişisel veri gönderilmez</td></tr>
+    <tr><td>Google News, Bing News</td><td>Piyasa haberleri</td><td>Haber kategorisi / arama terimi</td></tr>
+  </tbody>
+</table>
+<p>Bu hizmetlere yapılan her istekte, internetin doğası gereği IP adresin de iletilir. Uygulamada reklam, reklam takibi ya da analitik/izleme aracı yoktur.</p>
+
+<h2>6. Saklama ve silme</h2>
+<ul>
+  <li>Cihazındaki veriler, sen silene ya da uygulamayı kaldırana kadar cihazında kalır.</li>
+  <li>Bulut hesabını uygulamadaki <strong>Hesabı sil</strong> seçeneğiyle istediğin an silebilirsin; hesap kimliğin, plan ve kullanım kayıtların silinir.</li>
+  <li>Drive yedeğini Google Drive ayarlarından ("Uygulamaları yönet") silebilirsin.</li>
+  <li>Google izinlerini istediğin zaman <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> adresinden geri alabilirsin.</li>
+  <li>Satın alma kayıtları, mağazaların ve RevenueCat'in yasal saklama sürelerine tabidir.</li>
+</ul>
+
+<h2>7. Hukuki sebepler ve yurt dışına aktarım (KVKK)</h2>
+<p>Kişisel verilerin KVKK m.5 uyarınca şu sebeplerle işlenir:</p>
+<ul>
+  <li>Uygulamanın sunulması: bir sözleşmenin kurulması veya ifası.</li>
+  <li>Hesap ve güvenlik: veri sorumlusunun meşru menfaati.</li>
+  <li>Radar Asistanı ve isteğe bağlı izinler (Gmail gönderme, Drive, kullanım süreleri): açık rızan.</li>
+</ul>
+<p>Hizmet sağlayıcılarımızın sunucuları yurt dışındadır: Supabase AB'de, Google, RevenueCat ve Apple ağırlıkla ABD'de. Verilerinin bu sağlayıcılara aktarılması KVKK m.9'a uygun olarak yapılır.</p>
+
+<h2>8. Hakların (KVKK m.11)</h2>
+<p>Kişisel verilerinin işlenip işlenmediğini öğrenme, bilgi talep etme, işlenme amacını öğrenme, aktarıldığı üçüncü kişileri bilme, eksik veya yanlış işlenmişse düzeltilmesini, silinmesini ya da yok edilmesini isteme, itiraz etme ve zararın giderilmesini talep etme haklarına sahipsin. Başvurunu <a href="mailto:samahorrtolga@gmail.com">samahorrtolga@gmail.com</a> adresine iletebilirsin; en geç 30 gün içinde yanıtlanır.</p>
+
+<h2>9. Güvenlik</h2>
+<p>Sunucuyla iletişim şifreli (HTTPS) bağlantı üzerinden yapılır. Yedekler senin şifrenle şifrelenir. Uygulama kilidi ve oturum bilgileri işletim sisteminin güvenli deposunda tutulur.</p>
+
+<h2>10. Çocuklar</h2>
+<p>Account Radar 13 yaş altı çocuklara yönelik değildir ve bu yaştaki çocuklardan bilerek veri toplamaz.</p>
+
+<h2>11. Değişiklikler</h2>
+<p>Bu politikayı güncellersek yürürlük tarihini değiştiririz; önemli değişiklikleri uygulama içinde bildiririz.</p>
+
+<!-- ============================ ENGLISH ============================ -->
+<section class="lang" id="en" lang="en">
+<h1>Privacy Policy</h1>
+<p class="muted">Effective date: October 3, 2026</p>
+
+<div class="box">
+  <strong>In short:</strong> Account Radar processes your emails and spending notifications <strong>on your phone</strong>. Your email contents, receipt photos and email addresses are not sent to our servers. We don't sell your data or use it for advertising. If you use Radar Assistant and agree, only a <strong>summary</strong> of your finances is sent to an AI provider.
+</div>
+
+<h2>1. Controller</h2>
+<p>Tolga Samahor, Istanbul, Türkiye. Contact: <a href="mailto:samahorrtolga@gmail.com">samahorrtolga@gmail.com</a></p>
+
+<h2>2. Data we process and where</h2>
+<ul>
+  <li><strong>Google account</strong> (name, email, photo): sign-in and showing which Gmail account was scanned. Stored on your device; your account ID is stored on our server if you create a cloud account.</li>
+  <li><strong>Gmail messages</strong> (read-only, <code>gmail.readonly</code>): to find subscriptions, invoices, App Store / Google Play receipts, trials, cancellations and bank spending notifications, and to show a message in the app. <strong>Processed only on your device</strong>; messages are never sent to our servers. Extracted results (name, amount, date) are stored on your device.</li>
+  <li><strong>Send email</strong> (<code>gmail.send</code>, optional): to send a cancellation email you ask for, or a PIN recovery code to yourself, from your own Gmail, only when you tap Send.</li>
+  <li><strong>Google Drive app folder</strong> (<code>drive.appdata</code>, optional): to store your backup, encrypted with a password only you know.</li>
+  <li><strong>Data you enter</strong> (prices, expenses, budgets, income, category limits, shared subscriptions, portfolio): stored on your device.</li>
+  <li><strong>Receipt photos</strong>: read with on-device text recognition; never uploaded.</li>
+  <li><strong>App usage times</strong> (Android only, with permission): to flag unused subscriptions; stays on device.</li>
+  <li><strong>App lock</strong>: the PIN is stored only as a hash on the device; biometrics are handled by the operating system.</li>
+  <li><strong>Cloud account and plan</strong>: account ID, plan, and daily question/token counts on our server (Supabase, EU – Frankfurt).</li>
+  <li><strong>Purchases</strong>: paid through Apple / Google; subscription status is tracked via RevenueCat. We never see your card details.</li>
+</ul>
+
+<h2>3. Google user data</h2>
+<p>Account Radar's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+<ul>
+  <li>Gmail and Drive data are used only to provide the user-facing features shown in the app.</li>
+  <li>We do not sell this data, and we do not use or transfer it for advertising, credit assessment or data brokering.</li>
+  <li>We do not use Gmail data, or data derived from it, to develop, improve or train generalized AI or machine-learning models, and we don't allow others to do so.</li>
+  <li>No human reads your email, except with your explicit permission, for security purposes, or where required by law.</li>
+</ul>
+
+<h2>4. Radar Assistant (AI)</h2>
+<p>The first time you use it, the app shows what will be sent and asks for your consent. With consent, each question sends a summary through our server to Google Gemini: your subscriptions and prices, spending totals for the last 6 months, this month's merchant and account breakdown, planned payments for the next 30 days, and your monthly income. <strong>Email addresses, email contents and receipt photos are not sent.</strong> We don't store conversations; we keep only daily question and token counts to enforce limits.</p>
+
+<h2>5. Third-party services</h2>
+<p>Google (Sign-In, Gmail API, Drive API); Supabase (EU); Google Gemini API; Apple App Store / Google Play and RevenueCat; Google favicon service (subscription domain names, for logos); Yahoo Finance (stock symbols you follow); Frankfurter (exchange rates, no personal data); Google News and Bing News (market news). Your IP address is transmitted with any internet request. There are no ads, ad trackers or analytics SDKs in the app.</p>
+
+<h2>6. Retention and deletion</h2>
+<p>On-device data stays until you delete it or uninstall the app. You can delete your cloud account at any time with <strong>Delete account</strong> in the app. You can delete the Drive backup in Google Drive settings ("Manage apps") and revoke Google access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Purchase records are subject to the stores' and RevenueCat's retention rules.</p>
+
+<h2>7. Your rights</h2>
+<p>You may request access to, correction or deletion of your personal data, and object to its processing, by emailing <a href="mailto:samahorrtolga@gmail.com">samahorrtolga@gmail.com</a>. We reply within 30 days. Residents of Türkiye have the rights listed in Article 11 of Law No. 6698 (KVKK).</p>
+
+<h2>8. Children</h2>
+<p>Account Radar is not directed to children under 13 and does not knowingly collect their data.</p>
+
+<h2>9. Changes</h2>
+<p>If we change this policy we will update the effective date and announce important changes in the app.</p>
+</section>
+
+<footer>© 2026 Tolga Samahor · <a href="terms.html">Kullanım Şartları / Terms of Use</a></footer>
+</main>
+</body>
+</html>
